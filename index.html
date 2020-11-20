@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            color: #5e32c8;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .toggle-header {
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 2.5;
+        }
+
+        .active h5 {
+            transition: all .2s ease-in-out;
+            color: #f21059;
+        }
+
+        .toggle-content {
+            display: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        h5 {
+            padding: 0;
+            margin: 0;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.67;
+            text-align: left;
+        }
+
+        .toggle-container {
+            position: relative;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            width: 800px;
+
+        }
+
+        .toggle-header-container {
+            padding-bottom: 10px;
+            border-bottom: 1px solid #5e32c8;
+        }
+
+        .toggle-header-container,
+        .toggle-item-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 17px 0px 13px 0px;
+        }
+
+        .toggle-item {
+            border-bottom: 1px solid #5e32c8;
+        }
+
+        .toggle-content {
+            padding-bottom: 16px;
+        }
+
+        .toggle-content p {
+            line-height: 1.56;
+            font-size: 16px;
+        }
+
+        button {
+            display: inline-block;
+            background-color: #f21059;
+            font-size: 18px;
+            color: white;
+            line-height: 1.11;
+            text-decoration: none;
+            padding: 12px 25px;
+            border: none;
+            min-height: 40px;
+            font-weight: 500;
+            text-align: center;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="toggle-container">
+        <div class="toggle-header-container">
+            <div class="toggle-header">Featured position</div>
+            <div class="toggle-header">Available until</div>
+        </div>
+        <div class="toggle-item">
+            <div class="toggle-item-header">
+                <h5>UX-designer for new gaming platform</h5>
+                <h5>2017-12-24</h5>
+            </div>
+            <div class="toggle-content">
+                <p>Interdum mi tortor. Donec sit amet ipsum eu nibh placerat pretium. Proin rutrum, libero vitae
+                    vehicula lacinia, velit ante laoreet nibh, in posuere dui sapien. Aliquam non venenatis tortor.
+                    Donec pulvinar diam urna, id viverra orci scelerisque sit amet. Nullam cursus, felis id ornare
+                    molestie, nunc dui molestie ligula, quis ornare ipsum erat sit amet est. Aliquam tincidunt pretium
+                    urna, eget eleifend odio consequat eget. Sed finibus, orci id ullamcorper commodo, eros diam laoreet
+                    lectus, vitae condimentum elit diam non arcu. Morbi accumsan orci sed leo auctor commodo. In sed
+                    dapibus tortor.
+                    <br />
+                    <br />
+                    Ut nibh libero, euismod sed suscipit ut, interdum vitae justo. Pellentesque vehicula dictum erat,
+                    eget tincidunt neque. Aliquam scelerisque enim luctus lorem mollis, sed porttitor metus ullamcorper.
+                    Ut lobortis ipsum id pulvinar laoreet. Mauris aliquet molestie consequat. Etiam hendrerit velit
+                    vitae lacus lacinia dapibus.</p>
+                <button>apply here!</button>
+            </div>
+        </div>
+        <div class="toggle-item">
+            <div class="toggle-item-header">
+                <h5>Java developer</h5>
+                <h5>2017-12-20</h5>
+            </div>
+            <div class="toggle-content">
+                <p>Interdum mi tortor. Donec sit amet ipsum eu nibh placerat pretium. Proin rutrum, libero vitae
+                    vehicula lacinia, velit ante laoreet nibh, in posuere dui sapien. Aliquam non venenatis tortor.
+                    Donec pulvinar diam urna, id viverra orci scelerisque sit amet. Nullam cursus, felis id ornare
+                    molestie, nunc dui molestie ligula, quis ornare ipsum erat sit amet est. Aliquam tincidunt pretium
+                    urna, eget eleifend odio consequat eget. Sed finibus, orci id ullamcorper commodo, eros diam laoreet
+                    lectus, vitae condimentum elit diam non arcu. Morbi accumsan orci sed leo auctor commodo. In sed
+                    dapibus tortor.
+                    <br />
+                    <br />
+                    Ut nibh libero, euismod sed suscipit ut, interdum vitae justo. Pellentesque vehicula dictum erat,
+                    eget tincidunt neque. Aliquam scelerisque enim luctus lorem mollis, sed porttitor metus ullamcorper.
+                    Ut lobortis ipsum id pulvinar laoreet. Mauris aliquet molestie consequat. Etiam hendrerit velit
+                    vitae lacus lacinia dapibus.</p>
+                <button>apply here!</button>
+            </div>
+        </div>
+        <div class="toggle-item">
+            <div class="toggle-item-header">
+                <h5>Audio engineer for new game</h5>
+                <h5>2017-10-30</h5>
+            </div>
+            <div class="toggle-content">
+                <p>Interdum mi tortor. Donec sit amet ipsum eu nibh placerat pretium. Proin rutrum, libero vitae
+                    vehicula lacinia, velit ante laoreet nibh, in posuere dui sapien. Aliquam non venenatis tortor.
+                    Donec pulvinar diam urna, id viverra orci scelerisque sit amet. Nullam cursus, felis id ornare
+                    molestie, nunc dui molestie ligula, quis ornare ipsum erat sit amet est. Aliquam tincidunt pretium
+                    urna, eget eleifend odio consequat eget. Sed finibus, orci id ullamcorper commodo, eros diam laoreet
+                    lectus, vitae condimentum elit diam non arcu. Morbi accumsan orci sed leo auctor commodo. In sed
+                    dapibus tortor.
+                    <br />
+                    <br />
+                    Ut nibh libero, euismod sed suscipit ut, interdum vitae justo. Pellentesque vehicula dictum erat,
+                    eget tincidunt neque. Aliquam scelerisque enim luctus lorem mollis, sed porttitor metus ullamcorper.
+                    Ut lobortis ipsum id pulvinar laoreet. Mauris aliquet molestie consequat. Etiam hendrerit velit
+                    vitae lacus lacinia dapibus.</p>
+                <button>apply here!</button>
+            </div>
+        </div>
+        <div class="toggle-item">
+            <div class="toggle-item-header">
+                <h5>Creative Director (Games)</h5>
+                <h5>2017-09-14</h5>
+            </div>
+            <div class="toggle-content">
+                <p>Interdum mi tortor. Donec sit amet ipsum eu nibh placerat pretium. Proin rutrum, libero vitae
+                    vehicula lacinia, velit ante laoreet nibh, in posuere dui sapien. Aliquam non venenatis tortor.
+                    Donec pulvinar diam urna, id viverra orci scelerisque sit amet. Nullam cursus, felis id ornare
+                    molestie, nunc dui molestie ligula, quis ornare ipsum erat sit amet est. Aliquam tincidunt pretium
+                    urna, eget eleifend odio consequat eget. Sed finibus, orci id ullamcorper commodo, eros diam laoreet
+                    lectus, vitae condimentum elit diam non arcu. Morbi accumsan orci sed leo auctor commodo. In sed
+                    dapibus tortor.
+                    <br />
+                    <br />
+                    Ut nibh libero, euismod sed suscipit ut, interdum vitae justo. Pellentesque vehicula dictum erat,
+                    eget tincidunt neque. Aliquam scelerisque enim luctus lorem mollis, sed porttitor metus ullamcorper.
+                    Ut lobortis ipsum id pulvinar laoreet. Mauris aliquet molestie consequat. Etiam hendrerit velit
+                    vitae lacus lacinia dapibus.</p>
+                <button>apply here!</button>
+            </div>
+        </div>
+        <div class="toggle-item">
+            <div class="toggle-item-header">
+                <h5>Level Editor</h5>
+                <h5>2017-08-13</h5>
+            </div>
+            <div class="toggle-content">
+                <p> 
+                    Interdum mi tortor. Donec sit amet ipsum eu nibh placerat pretium. Proin rutrum, libero vitae
+                    vehicula lacinia, velit ante laoreet nibh, in posuere dui sapien. Aliquam non venenatis tortor.
+                    Donec pulvinar diam urna, id viverra orci scelerisque sit amet. Nullam cursus, felis id ornare
+                    molestie, nunc dui molestie ligula, quis ornare ipsum erat sit amet est. Aliquam tincidunt pretium
+                    urna, eget eleifend odio consequat eget. Sed finibus, orci id ullamcorper commodo, eros diam laoreet
+                    lectus, vitae condimentum elit diam non arcu. Morbi accumsan orci sed leo auctor commodo. In sed
+                    dapibus tortor.
+                    <br />
+                    <br />
+                    Ut nibh libero, euismod sed suscipit ut, interdum vitae justo. Pellentesque vehicula dictum erat,
+                    eget tincidunt neque. Aliquam scelerisque enim luctus lorem mollis, sed porttitor metus ullamcorper.
+                    Ut lobortis ipsum id pulvinar laoreet. Mauris aliquet molestie consequat. Etiam hendrerit velit
+                    vitae lacus lacinia dapibus.
+                </p>
+                <button>apply here!</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script>
+        $(document).ready(function () {
+
+            $(document).on('click', '.toggle-item', function () {
+
+                if ($(this).hasClass('active')) {
+
+                    $(this).removeClass('active');
+                    $(this).find('.toggle-content').slideUp(1000);
+
+                } else {
+
+                    $(this).addClass('active');
+                    $(this).find('.toggle-content').slideDown(1000);
+
+                }
+
+            });
+
+        });
+
+
+
+    </script>
+</body>
+
+</html>
